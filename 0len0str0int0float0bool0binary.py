@@ -35,7 +35,14 @@ print(flag) # flag değişkeninin değeri ekrana yazdırılır.
 print(type(flag)) # type() fonksiyonu, bir değişkenin veri tipini döndürür. Bu örnekte, flag değişkeninin veri tipi ekrana yazdırılır.
 print(10>5) # 10>5 ifadesi True değerini döndürür. Bu örnekte, 10 sayısı 5 sayısından büyük olduğu için ekrana True yazdırılır.7
 print(10<5) # 10<5 ifadesi False değerini döndürür. Bu örnekte, 10 sayısı 5 sayısından küçük olmadığı için ekrana False yazdırılır.
-
+print(type(10>5)) # type() fonksiyonu, bir değişkenin veri tipini döndürür. Bu örnekte, 10>5 ifadesinin veri tipi ekrana yazdırılır.
+print(type(10<5)) # type() fonksiyonu, bir değişkenin veri tipini döndürür. Bu örnekte, 10<5 ifadesinin veri tipi ekrana yazdırılır.
+flag = 0 # boolean tipi, True veya False değerlerini alabilir. Bu örnekte, flag değişkeni 0 değerini alır. 0 değeri False olarak değerlendirilir; 1 değeri ise True olarak değerlendirilir.
+print(flag)
+print(type(flag)) # integer dır çünkü 0 ve 1 değerleri integer tipindedir. Bu örnekte, flag değişkeninin veri tipi ekrana yazdırılır. Eğer flag boolean tipinde olsaydı, type() fonksiyonu ekrana bool yazdırırdı. 0 ı boolean tipine çevirmek için bool() fonksiyonu kullanılabilir. Örneğin, flag = bool(0) ifadesi ile flag değişkeni False değerini alır ve type(flag) ifadesi ekrana bool yazdırır.
+flag = bool(0) # boolean tipi, True veya False değerlerini alabilir. Bu örnekte, flag değişkeni False değerini alır.
+print(flag)
+print(type(flag)) # type() fonksiyonu, bir değişkenin veri tipini döndürür. Bu örnekte, flag değişkeninin veri tipi ekrana yazdırılır. Eğer flag boolean tipinde olmasaydı, type() fonksiyonu ekrana int yazdırırdı.
 
 
 
