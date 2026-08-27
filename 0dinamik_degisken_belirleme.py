@@ -10,6 +10,13 @@ x = 3.14 # x artık bir float (ondalıklı sayı) tipindedir
 print(type(x)) # <class 'float'>
 """
 
-a = 5
-b = "5"
-c = 5.0
+a = 5    # integer (tam sayı)
+b = "5"  # string (metin)
+c = 5.0  # float (ondalıklı sayı)
+print(type(a))  # <class 'int'>
+print(type(b))  # <class 'str'>
+print(type(c))  # <class 'float'>
+
+x = 10
+y = "5"
+print(x + int(y))  # 15, y string olduğu için int() ile integer'a çevirdik / typecast (tip dönüşümü) yaptık
