@@ -1,0 +1,90 @@
+Evet, doğrudan bilgisayarındaki **`COURSE` klasörünü**, GitHub’da açtığın **`COURSE` deposuna** gönderebilirsin.
+
+VS Code terminalini açıp şu komutları çalıştır:
+
+```powershell
+cd "C:\Users\MEK\Desktop\py cloud\COURSE"
+
+git init
+git remote add origin https://github.com/KULLANICI_ADIN/COURSE.git
+git add .
+git commit -m "COURSE dosyaları eklendi"
+git branch -M main
+git push -u origin main
+```
+
+`KULLANICI_ADIN` yerine GitHub kullanıcı adını yaz.
+
+GitHub deposunu oluştururken **README, .gitignore veya lisans eklediysen**, önce şu komut gerekebilir:
+
+```powershell
+git pull origin main --allow-unrelated-histories
+git push -u origin main
+```
+
+GitHub giriş ekranı açılırsa hesabınla giriş yap. Bundan sonra yeni dosya göndermek için yalnızca:
+
+```powershell
+git add .
+git commit -m "Yeni dosya eklendi"
+git push
+```
+
+yeterli olur
+
+VS Code’da `.gitignore` eklemek için:
+
+1. Sol taraftaki **Explorer** bölümünde proje klasörüne sağ tıklayın.
+2. **New File** seçeneğine tıklayın.
+3. Dosya adını tam olarak yazın:
+
+```text
+.gitignore
+```
+
+4. Enter’a basın ve ignore etmek istediğiniz dosya/klasörleri ekleyin. Örneğin:
+
+```gitignore
+__pycache__/
+*.pyc
+.env
+.vscode/
+```
+
+Git’in daha önce takip ettiği dosyalar varsa `.gitignore` sonradan onları gizlemez. Bu durumda terminalde:
+
+```bash
+git rm -r --cached .
+git add .
+git commit -m "Add gitignore"
+```
+
+komutlarını kullanabilirsiniz.
+VS Code’da `.gitignore` eklemek için:
+
+1. Sol taraftaki **Explorer** bölümünde proje klasörüne sağ tıklayın.
+2. **New File** seçeneğine tıklayın.
+3. Dosya adını tam olarak yazın:
+
+```text
+.gitignore
+```
+
+4. Enter’a basın ve ignore etmek istediğiniz dosya/klasörleri ekleyin. Örneğin:
+
+```gitignore
+__pycache__/
+*.pyc
+.env
+.vscode/
+```
+
+Git’in daha önce takip ettiği dosyalar varsa `.gitignore` sonradan onları gizlemez. Bu durumda terminalde:
+
+```bash
+git rm -r --cached .
+git add .
+git commit -m "Add gitignore"
+```
+
+komutlarını kullanabilirsiniz.
