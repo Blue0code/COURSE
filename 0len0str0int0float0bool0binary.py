@@ -26,6 +26,15 @@ print(999999999999999999999999999999999999999+1) # Python'da integer tipi, çok 
 print(type(999999999999999999999999999999999999999+1))
 
 # float tipi(float) (kayan noktalı sayılar)
+print(10.2) # float tipi, ondalıklı sayıları temsil eder. Bu örnekte, 10.2 sayısı ekrana yazdırılır.
+print(type(10.2)) # type() fonksiyonu, bir değişkenin veri tipini döndürür. Bu örnekte, 10.2 sayısının veri tipi ekrana yazdırılır.
+
+# boolean tipi(bool) (mantıksal değerler)
+flag=True # boolean tipi, True veya False değerlerini alabilir. Bu örnekte, flag değişkeni True değerini alır.
+print(flag) # flag değişkeninin değeri ekrana yazdırılır.
+print(type(flag)) # type() fonksiyonu, bir değişkenin veri tipini döndürür. Bu örnekte, flag değişkeninin veri tipi ekrana yazdırılır.
+print(10>5) # 10>5 ifadesi True değerini döndürür. Bu örnekte, 10 sayısı 5 sayısından büyük olduğu için ekrana True yazdırılır.7
+print(10<5) # 10<5 ifadesi False değerini döndürür. Bu örnekte, 10 sayısı 5 sayısından küçük olmadığı için ekrana False yazdırılır.
 
 
 
