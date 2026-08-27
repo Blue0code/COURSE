@@ -45,7 +45,6 @@ print(flag)
 print(type(flag)) # type() fonksiyonu, bir değişkenin veri tipini döndürür. Bu örnekte, flag değişkeninin veri tipi ekrana yazdırılır. Eğer flag boolean tipinde olmasaydı, type() fonksiyonu ekrana int yazdırırdı.
 
 
-
 """
 print(0b1010) # 0b ile başlayan sayılar binary (ikili) sayı sisteminde yazılır. Bu örnekte, 0b1010 binary sayısı decimal (onluk) sayı sisteminde 10'a eşittir.
 print(0o12) # 0o ile başlayan sayılar octal (sekizli) sayı sisteminde yazılır. Bu örnekte, 0o12 octal sayısı decimal (onluk) sayı sisteminde 10'a eşittir.
