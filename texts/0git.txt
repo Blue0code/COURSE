@@ -120,6 +120,19 @@ git status
 git rm -r --cached .
 git add .
 ```
+Hayır, .gitignore dosyası içine */ yazmak, yalnızca o anki klasörün içindeki tüm alt klasörleri ve bu klasörlerin içindekileri engeller; ancak bulunduğu klasörün kendisini (yani .gitignore dosyasının yer aldığı ana dizini) engellemez.
+Git, .gitignore dosyasının bulunduğu dizini her zaman takip etmeye devam eder.
+Ne Anlama Gelir?
+ * */ ifadesi, "bu dizinin altındaki tüm birinci seviye dizinleri yok say" demektir.
+ * Örneğin, projenizin kök dizinine koyduğunuz bir .gitignore içinde */ yazarsanız, kök dizindeki dosyalar (örneğin main.py veya README.md) takip edilmeye devam eder, ancak alt klasörlerin içindekiler yok sayılır.
+Nasıl Doğrularsınız?
+Değişikliğin doğru çalışıp çalışmadığını anlamak için terminalde şu komutu çalıştırabilirsiniz:
+git status --ignored
+
+Bu komut, hangi dosya ve klasörlerin Git tarafından dikkate alınmadığını size listeleyecektir. Eğer bulunduğunuz klasörün adı bu listede geçmiyorsa, klasörün kendisi engellenmemiş demektir.
+Klasörün tamamını (içindeki dosyalarla birlikte) tamamen engellemek istiyorsanız, */ yerine doğrudan klasörün adını veya kök dizini işaret ediyorsanız o dizine ait yolu yazmanız gerekir.
+Hangi klasörü veya yapıyı engellemek istemiştiniz? Tam olarak neyi hedeflediğinizi söylerseniz doğru satırı birlikte yazabiliriz.
+
 
                          ...................                                                        
                     . .....................      ..       .....                                     
