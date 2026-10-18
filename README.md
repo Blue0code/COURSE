@@ -1,4 +1,6 @@
 # COURSE
 New private house for my python.
 
-d2.0 için [tıklayınız...](https://github.com/Blue0code/COURSE/releases)
+for releases: [*'____'*](https://github.com/Blue0code/COURSE/releases)
+[basit](https://github.com/Blue0code/COURSE/releases/tag/beta1.0)
+[jsonla karışık](https://github.com/Blue0code/COURSE/releases/tag/d2.0)
