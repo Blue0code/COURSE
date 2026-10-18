@@ -1,5 +1,6 @@
 *
 !texts/
+!projectCryptography/
 !*.py
 !*.md
 !.gitignore
