@@ -202,19 +202,19 @@ print(orijinal_sozluk)
 
 
 
-import base64
+import base64 as b
 import json
 
 sozluk = {"id": 1, "rol": "editor"}
 json_str = json.dumps(sozluk)
 
 # Base64 Encode
-encoded_bytes = base64.b64encode(json_str.encode('utf-8'))
+encoded_bytes = b.b64encode(json_str.encode('utf-8'))
 encoded_str = encoded_bytes.decode('utf-8')
 print("Base64:", encoded_str)
 
 # Base64 Decode
-decoded_bytes = base64.b64decode(encoded_str.encode('utf-8'))
+decoded_bytes = b.b64decode(encoded_str.encode('utf-8'))
 cozulmus_sozluk = json.loads(decoded_bytes.decode('utf-8'))
 
 
@@ -250,20 +250,3 @@ fernet_anahtari = base64.urlsafe_b64encode(i32_baytlik_sifre)
 # Artık bu anahtarla Fernet nesnesini başlatabiliriz
 fernet = Fernet(fernet_anahtari)
 print("Üretilen Geçerli Fernet Anahtarınız:", fernet_anahtari.decode())
-
-
-
-
-
-
-
-
-
-#anlamak için örnek bir kod
-import base64
-import hashlib
-from cryptography.fernet import Fernet
-import json
-
-keyin = input("Anahtar giriniz:") 
-#hasher = hashlib.***
