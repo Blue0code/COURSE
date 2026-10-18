@@ -1,5 +1,4 @@
 *
-!texts/
 !*.py
+!*.txt
 !*.md
-!.gitignore
