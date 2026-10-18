@@ -241,12 +241,12 @@ kendi_sifrem = "BenimCokGizliOzelSifrem123!"
 
 # 2. Metni SHA-256 ile 32 baytlık benzersiz bir özete dönüştürüyoruz
 # (Böylece girdi ne olursa olsun her zaman tam 32 bayt olur)
-hasher = hashlib.sha256(kendi_sifrem.encode('utf-8'))
+hasher = hashlib.sha256(kendi_sifrem.encode('utf-8')) # encode() metodu, metni (string) bayt dizisine (bytes) dönüştürür. SHA-256 algoritması, bayt dizisini alır ve 32 baytlık bir hash değeri üretir.
 i32_baytlik_sifre = hasher.digest() # digest() metodu, hash nesnesinin özetini (hash değerini) bayt dizisi olarak döndürür. Bu, şifrenin SHA-256 algoritması ile üretilmiş 32 baytlık benzersiz bir temsilidir.
 
 # 3. Fernet standartları için Base64 formatına kodluyoruz
-fernet_anahtari = base64.urlsafe_b64encode(i32_baytlik_sifre)
+fernet_anahtari = base64.urlsafe_b64encode(i32_baytlik_sifre) # urlsafe_b64encode() metodu, bayt dizisini Base64 formatına dönüştürür ve URL güvenli bir şekilde kodlar. Bu, Fernet'in gerektirdiği formatta bir anahtar üretir.
 
 # Artık bu anahtarla Fernet nesnesini başlatabiliriz
 fernet = Fernet(fernet_anahtari)
-print("Üretilen Geçerli Fernet Anahtarınız:", fernet_anahtari.decode())
+print("Üretilen Geçerli Fernet Anahtarınız:", fernet_anahtari.decode()) # decode() metodu, bayt dizisini (bytes) UTF-8 formatında bir string'e dönüştürür. Bu sayede anahtarın okunabilir bir temsilini ekrana yazdırabiliriz.
