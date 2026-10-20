@@ -1,7 +1,6 @@
 # COURSE
-New private house for my python.
 
-for releases:  [tıklayınız...](https://github.com/Blue0code/COURSE/releases)
+for my releases:  [tıklayınız...](https://github.com/Blue0code/COURSE/releases)
 
 # Diğer
 
