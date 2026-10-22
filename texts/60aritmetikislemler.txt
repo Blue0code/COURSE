@@ -1,0 +1,16 @@
+ARİTMETİK OPERATÖRLER
+
+
++ toplama 3+5=8
+- çıkarma 10-4=6
+* çarpma 6*3=18
+/ bölme (ondalıklı sonuç) 10/4=2.5
+// tam sayı bölme 10//4=2
+% modül (kalan) 10%3=1
+** üs alma 2**3=8
+
+Python'da işlem önceliği şu sıraya göredir:
+_I_ Parantez ()
+_II_ Üs Alma **
+_III_ Çarpma * , Bölme / , Tam Bölme // , Modül % [SOLDAN SAĞA]
+_IV_ Toplama + , Çıkarma - [SOLDAN SAĞA]
